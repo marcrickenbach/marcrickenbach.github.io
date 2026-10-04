@@ -34,6 +34,7 @@ main {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.3;
+    font-weight: 500;
 }
 
 .main_title {
@@ -65,8 +66,81 @@ main {
     font-weight: 700;
 }
 
+.employer-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 120ms ease-in-out;
+}
+
+.resonance-link:hover,
+.resonance-link:focus-visible {
+    color: #1769aa;
+}
+
+.fkmg-link:hover,
+.fkmg-link:focus-visible {
+    color: #d96a18;
+}
+
+.employer-link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
 #education {
     margin-top: 28px;
+}
+
+#social-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+#social-links a {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    align-items: center;
+    justify-content: center;
+    color: #292929;
+}
+
+#social-links a:hover,
+#social-links a:focus-visible {
+    color: #777;
+}
+
+#social-links a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+
+#social-links svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#social-links .icon-fill {
+    fill: currentColor;
+    stroke: none;
+}
+
+#social-links .icon-knockout {
+    fill: #fafafa;
+    stroke: none;
+}
+
+#social-links .icon-knockout-stroke {
+    fill: none;
+    stroke: #fafafa;
+    stroke-width: 1.5;
 }
 
 @media (min-width: 800px) {
