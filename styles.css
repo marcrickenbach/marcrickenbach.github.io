@@ -91,11 +91,105 @@ main {
     margin-top: 28px;
 }
 
+#projects {
+    margin-top: 24px;
+}
+
+#writings {
+    margin-top: 24px;
+}
+
+#music { 
+    margin-top: 24px;
+}
+
+.writings-label {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.writings-list {
+    margin: 4px 0 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.writings-list li::before {
+    content: "> ";
+}
+
+.writing-link,
+.writing-link:visited {
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.writing-link:hover,
+.writing-link:focus-visible {
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.projects-label {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.project-list {
+    margin: 4px 0 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.project-list li::before {
+    content: "> ";
+}
+
+.music-label {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.music-list {
+    margin: 4px 0 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.music-list li::before {
+    content: "> ";
+}
+
+.music-link,
+.music-link:visited {
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.music-link:hover,
+.music-link:focus-visible {
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 #social-links {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-top: 24px;
+    margin-top: 50px;
 }
 
 #social-links a {
