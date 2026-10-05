@@ -31,6 +31,13 @@ projectLinks.forEach((link) => {
     });
 });
 
+document.addEventListener("click", (event) => {
+    const clickedLink = event.target.closest("a");
+    if (clickedLink && !clickedLink.classList.contains("project-link")) {
+        hideProjectPreview();
+    }
+});
+
 document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && !projectPreview.hidden) {
         hideProjectPreview();
