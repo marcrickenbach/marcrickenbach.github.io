@@ -7,6 +7,7 @@
     <title>Marc Rickenbach</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main>
@@ -28,12 +29,17 @@
         <section id="projects" aria-label="Projects">
             <p class="projects-label">projects &gt;</p>
             <ul class="project-list">
-                <li>klima</li>
-                <li>idein</li>
+                <li><a class="project-link" href="img/klima_img.png" data-description="klima : atmospheric logic eurorack module (2023)" aria-controls="project-preview" aria-expanded="false">klima</a></li>
+                <li><a class="project-link" href="img/idein.png" data-description="idein : optic gate and trigger generator eurorack module (2023)" aria-controls="project-preview" aria-expanded="false">idein</a></li>
                 <li>datein</li>
                 <li>zazie</li>
             </ul>
         </section>
+
+        <aside id="project-preview" class="project-preview" aria-live="polite" hidden>
+            <p class="preview-caption"></p>
+            <img src="" alt="">
+        </aside>
 
 
         <section id="music" aria-label="Music">
